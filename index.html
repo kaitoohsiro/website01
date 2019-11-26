@@ -23,13 +23,14 @@
           <li class="menu-v" @click="fight('list1')">プロフィール</li>
           <li class="menu-v" @click="fight('list2')">つよさ</li>
           <li class="menu-v" @click="fight('list3')">とくぎとじゅもん</li>
+          <li class="menu-v" @click="fight('list4')">げーむをする</li>
         </ul>
       </div>
       <div class="menu">
         <p v-if="list01">
             <p v-if="list01">name:{{ name }}</p>
             <p v-if="list01">age:{{ age }}</p>
-            <p v-if="list01">jender:{{ jender }}</p>
+            <p v-if="list01">gender:{{ jender }}</p>
             <p v-if="list01">university:{{ university }}</p>
             <p v-if="list01">programing:{{ a }},{{ b }},{{ c }},{{ d }}</p>
             <p v-if="list01">その他:{{ e }}<br>{{ f }}</p>
@@ -44,7 +45,8 @@
             <p v-if="list03">{{ k }}</p>
             <p v-if="list03">{{ l }}</p>
         </p>
-        <p v-if="list04">選択してください</p>
+        <a href="indexFight.html" id=""><p v-if="list04">たたかう</p></a>
+        <p v-if="listX">選択してください</p>
       </div>
     </div>
 
@@ -52,3 +54,4 @@
     <script src="./js/webHome.js"></script>
   </body>
 </html>
+
