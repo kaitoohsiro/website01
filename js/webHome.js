@@ -56,3 +56,4 @@ var Vue = new Vue({
     }
   }
 });
+
